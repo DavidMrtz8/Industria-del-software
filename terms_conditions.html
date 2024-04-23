@@ -23,48 +23,48 @@
       src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"
     ></script>
   </head>
-  <body>
+  <body class="font-body">
     <section class="bg-white pt-10">
       <div class="container max-w-screen-xl mx-auto px-4">
-    <nav class="flex-wrap lg:flex items-center" x-data="{navbarOpen:false}">
-      <div class="flex items-center mb-10 lg:mb-0">
-        <img src="assets/image/edutek.png" class="w-28" alt="Logo" />
+        <nav class="flex-wrap lg:flex items-center" x-data="{navbarOpen:false}">
+          <div class="flex items-center mb-10 lg:mb-0">
+            <img src="assets/image/edutek.png" class="w-28" alt="Logo" />
 
-        <button
-          class="lg:hidden w-10 h-10 ml-auto flex items-center justify-center border border-blue-500 text-blue-500 rounded-md"
-          @click="navbarOpen = !navbarOpen"
-        >
-          <i data-feather="menu"></i>
-        </button>
-      </div>
+            <button
+              class="lg:hidden w-10 h-10 ml-auto flex items-center justify-center border border-blue-500 text-blue-500 rounded-md"
+              @click="navbarOpen = !navbarOpen"
+            >
+              <i data-feather="menu"></i>
+            </button>
+          </div>
 
-      <ul
-        class="lg:flex flex-col lg:flex-row lg:items-center lg:mx-auto lg:space-x-8 xl:space-x-14"
-        :class="{'hidden':!navbarOpen,'flex':navbarOpen}"
-      >
-        <li
-          class="font-semibold text-gray-900 hover:text-gray-400 transition ease-in-out duration-300 mb-5 lg:mb-0"
-        >
-          <a href="./index.html#home">Home</a>
-        </li>
-        <li
-          class="font-semibold text-gray-900 hover:text-gray-400 transition ease-in-out duration-300 mb-5 lg:mb-0"
-        >
-          <a href="./index.html#funcionalidades">Funcionalidades</a>
-        </li>
-        <li
-          class="font-semibold text-gray-900 hover:text-gray-400 transition ease-in-out duration-300 mb-5 lg:mb-0"
-        >
-          <a href="/index.html#precios">Precios</a>
-        </li>
-        <li
-          class="font-semibold text-gray-900 hover:text-gray-400 transition ease-in-out duration-300 mb-5 lg:mb-0"
-        >
-          <a href="#">Referencias</a>
-        </li>
-      </ul>
+          <ul
+            class="lg:flex flex-col lg:flex-row lg:items-center lg:mx-auto lg:space-x-8 xl:space-x-14"
+            :class="{'hidden':!navbarOpen,'flex':navbarOpen}"
+          >
+            <li
+              class="font-semibold text-gray-900 hover:text-gray-400 transition ease-in-out duration-300 mb-5 lg:mb-0"
+            >
+              <a href="./index.html#home">Home</a>
+            </li>
+            <li
+              class="font-semibold text-gray-900 hover:text-gray-400 transition ease-in-out duration-300 mb-5 lg:mb-0"
+            >
+              <a href="./index.html#funcionalidades">Funcionalidades</a>
+            </li>
+            <li
+              class="font-semibold text-gray-900 hover:text-gray-400 transition ease-in-out duration-300 mb-5 lg:mb-0"
+            >
+              <a href="/index.html#precios">Precios</a>
+            </li>
+            <li
+              class="font-semibold text-gray-900 hover:text-gray-400 transition ease-in-out duration-300 mb-5 lg:mb-0"
+            >
+              <a href="./testimonios.html">Testimonios</a>
+            </li>
+          </ul>
 
-      <!-- <div
+          <!-- <div
         class="lg:flex flex-col md:flex-row md:items-center text-center md:space-x-6"
         :class="{'hidden':!navbarOpen,'flex':navbarOpen}"
       >
@@ -80,8 +80,8 @@
           >Become a member</a
         >
       </div> -->
-    </nav>
-    </div>
+        </nav>
+      </div>
     </section>
     <div class="container mx-auto px-4 py-8">
       <h1 class="text-2xl font-bold mb-4">Términos y Condiciones de Uso</h1>
@@ -144,20 +144,33 @@
       </p>
 
       <h2 class="text-xl font-bold mb-2">6. Limitación de Responsabilidad</h2>
-      <p class="mb-4">EN NINGÚN CASO SEREMOS RESPONSABLES ANTE USTED O CUALQUIER TERCERO POR CUALQUIER DAÑO DIRECTO, INDIRECTO, INCIDENTAL, ESPECIAL, EMERGENTE O PUNITIVO QUE SURJA DEL USO DEL SOFTWARE O LA IMPOSIBILIDAD DE USARLO, INCLUYENDO, SIN LIMITACIÓN, DAÑOS POR PÉRDIDA DE BENEFICIOS, DATOS, USO O INTERRUPCIÓN DE NEGOCIOS, INCLUSO SI SE NOS HA ADVERTIDO SOBRE LA POSIBILIDAD DE DICHOS DAÑOS.</p>
-
-      <h2 class="text-xl font-bold mb-2"> 7. Ley Aplicable</h2>
       <p class="mb-4">
-        Estos Términos se regirán e interpretarán de acuerdo con las leyes de Honduras sin tener en cuenta sus disposiciones sobre conflictos de leyes.
+        EN NINGÚN CASO SEREMOS RESPONSABLES ANTE USTED O CUALQUIER TERCERO POR
+        CUALQUIER DAÑO DIRECTO, INDIRECTO, INCIDENTAL, ESPECIAL, EMERGENTE O
+        PUNITIVO QUE SURJA DEL USO DEL SOFTWARE O LA IMPOSIBILIDAD DE USARLO,
+        INCLUYENDO, SIN LIMITACIÓN, DAÑOS POR PÉRDIDA DE BENEFICIOS, DATOS, USO
+        O INTERRUPCIÓN DE NEGOCIOS, INCLUSO SI SE NOS HA ADVERTIDO SOBRE LA
+        POSIBILIDAD DE DICHOS DAÑOS.
+      </p>
+
+      <h2 class="text-xl font-bold mb-2">7. Ley Aplicable</h2>
+      <p class="mb-4">
+        Estos Términos se regirán e interpretarán de acuerdo con las leyes de
+        Honduras sin tener en cuenta sus disposiciones sobre conflictos de
+        leyes.
       </p>
 
       <h2 class="text-xl font-bold mb-2">8. Modificaciones de los Términos</h2>
-      <p class="mb-4">Nos reservamos el derecho de modificar estos Términos en cualquier momento. Las modificaciones entrarán en vigencia inmediatamente después de su publicación en esta página.</p>
+      <p class="mb-4">
+        Nos reservamos el derecho de modificar estos Términos en cualquier
+        momento. Las modificaciones entrarán en vigencia inmediatamente después
+        de su publicación en esta página.
+      </p>
       <h2 class="text-xl font-bold mb-2">9. Contacto</h2>
       <p class="mb-4">
         Si tiene alguna pregunta sobre estos Términos, por favor contáctenos a
         <a href="mailto:correo@ejemplo.com" class="text-blue-500"
-          >correo@ejemplo.com</a
+          >edutek@gmail.com</a
         >.
       </p>
     </div>
@@ -232,7 +245,10 @@
             >
           </div> -->
 
-          <div class="text-center lg:text-left space-y-7 mb-10 lg:mb-0" id="contactanos">
+          <div
+            class="text-center lg:text-left space-y-7 mb-10 lg:mb-0"
+            id="contactanos"
+          >
             <h4 class="font-semibold text-gray-900 text-lg md:text-2xl">
               Compañia
             </h4>
@@ -256,7 +272,7 @@
             > -->
 
             <a
-              href="#"
+              href="./testimonios.html"
               class="block font-light text-gray-400 text-sm md:text-lg hover:text-gray-800 transition ease-in-out duration-300"
               >Testimonios de clientes</a
             >
